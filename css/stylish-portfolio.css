@@ -29,6 +29,13 @@ body {
     font-weight: 700;
 }
 
+.center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -155,11 +162,25 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/raleigh-skyline.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: white;
+
+}
+
+#top .headerack {
+  position:relative;
+  bottom:0px;
+  left:0px;
+  visibility: hidden;
+  color: white;
+}
+
+#top:hover .headerack {
+  visibility: visible;
 }
 
 /* About */
@@ -236,4 +257,11 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+
+.img-med {
+    max-width: 20%;
+    float: left;
+    padding: 10px;
 }
